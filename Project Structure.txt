@@ -1,0 +1,37 @@
+ai-d2l-assistant/
+│
+├── client/                     # Frontend (React)
+│   ├── public/                 # Static assets
+│   ├── src/
+│   │   ├── assets/             # Icons, images
+│   │   ├── components/         # Reusable UI components
+│   │   ├── pages/              # Main views (Home, Results)
+│   │   ├── services/           # API calls (backend, Google Search)
+│   │   ├── utils/              # Helper functions
+│   │   ├── App.tsx            # Main app component
+│   │   └── index.tsx          # Entry point
+│   └── package.json
+│
+├── extension/                  # Chrome Extension
+│   ├── content.js              # Injected script to capture screen
+│   ├── background.js           # Background logic
+│   ├── popup.html              # Extension popup UI
+│   ├── popup.js
+│   └── manifest.json           # Extension config
+│
+├── server/                     # Backend (Node.js or Flask)
+│   ├── controllers/            # Route logic
+│   ├── routes/                 # API endpoints
+│   ├── services/               # OCR, AI, Google Search logic
+│   ├── utils/                  # Helper functions
+│   ├── app.js                  # Express or Flask app
+│   └── package.json / requirements.txt
+│
+├── ocr/                        # OCR & AI logic (Python or Node)
+│   ├── tesseract_worker.py     # OCR processing
+│   ├── summarizer.py           # Summarization logic
+│   └── question_generator.py   # Practice question generation
+│
+├── .env                        # API keys and secrets
+├── README.md
+└── package.json / requirements.txt
